@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="./ecommerce-registration.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Create Account</h2>
+      <form action="registration_process.php" method="POST">
+        <label for="fullname">Your First Name</label>
+        <input type="text" id="fullname" name="fullname" required />
+        <label for="fullname">Your Last Name</label>
+        <input type="text" id="fullname" name="fullname" required />
+        <label for="email">Mobile Number or Email</label>
+        <input type="text" id="email" name="email" required />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="6"
+          required
+        />
+        <p>Passwords must be at least 6 characters.</p>
+
+        <label for="confirm-password">Re-enter Password</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          minlength="6"
+          required
+        />
+
+        <button type="submit">Continue</button>
+      </form>
+      <p>
+        By creating an account, you agree to Ecommerce
+        <a href="#">Conditions of Use</a>
+        <a href="#">Privacy Notice</a>
+      </p>
+      <a href="#">Buying for work? Create a free business account</a>
+      <a href="#">Already have an account? Sign in</a>
+    </div>
+  </body>
+</html>

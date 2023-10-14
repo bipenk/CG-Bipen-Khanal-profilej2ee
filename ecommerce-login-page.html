@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./ecommerce-login-page.css" />
+    <!-- Include your CSS file here -->
+    <script src="./ecommerce-login-page.js"></script>
+    <!-- Include your JavaScript file -->
+  </head>
+  <body>
+    <div class="signin-container">
+      <h2>Sign in</h2>
+      <form onsubmit="return validateLogin()" id="login-form">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Login</button>
+      </form>
+      <p id="login-error" style="display: none; color: red">
+        Login failed. Wrong username or password.
+      </p>
+      <!--<form>
+        <label for="email">Email or mobile phone number</label>
+        <input type="text" id="email" name="email" required />
+      </form>
+      <form>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+        <button type="submit">Continue</button>
+      </form>-->
+      <button type="submit">Forgot Password</button>
+      <p class="agreement">
+        By continuing, you agree to Ecommerce
+        <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>
+      </p>
+      <p>Need help?</p>
+      <p class="new-to-amazon"><b>New to Ecommerce?</b></p>
+      <a href="./ecommerce-registration.html">Create your Ecommerce account</a>
+    </div>
+  </body>
+</html>
